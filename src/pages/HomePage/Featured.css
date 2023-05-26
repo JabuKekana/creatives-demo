@@ -1,0 +1,183 @@
+.offers{
+  /* background-image: url('../../pages/HomePage/HomePageAssets/whole-site-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover; */
+}
+
+/* For desktop */
+@media screen and (min-width: 1280px) {
+  .offers h3.animate-character {
+    font-size: 28px;
+    line-height: 140%;
+    margin-bottom: 50px;
+  }
+  .slide-container {
+    width: 100%;
+    height: 530px;
+  }
+  .slide-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+/* For mobile */
+@media screen and (max-width: 767px) {
+  .offers h3.animate-character {
+    padding: 20px;
+    text-align: center;
+  }
+  .slide-container {
+    width: 100%;
+    height: 400px; /* Adjust the height as needed for mobile screens */
+  }
+  .slide-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+/* For tablets */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .offers h3.animate-character {
+    padding: 20px;
+    text-align: center;
+  }
+  .slide-container {
+    width: 100%;
+    height: 800px; /* Adjust the height as needed for tablet screens */
+  }
+  .slide-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+/* For larger tablets and small desktop screens */
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .offers h3.animate-character {
+    padding: 20px;
+    text-align: center;
+  }
+  .slide-container {
+    width: 100%;
+    height: 400px; /* Adjust the height as needed for larger tablet screens and small desktop screens */
+  }
+  .slide-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+/* Default styles */
+.slide-container {
+  position: relative;
+}
+
+.slide-container .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.slide-container .overlay h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.slide-container .overlay .button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #fff;
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.slide-container .overlay .button:hover {
+  background-color: #f1f1f1;
+}
+
+.animate-character {
+  text-transform: uppercase;
+  background-image: linear-gradient(-225deg, #000000 0%, #231557 29%, #44107a 67%, #fff800 100%);
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+  font-size: 30px;
+  text-align: center;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+/* Add the rest of your styles below this line */
+
+/* Example style for the slide-container */
+.slide-container {
+  position: relative;
+}
+
+.slide-container .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.slide-container .overlay h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.slide-container .overlay .button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #fff;
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.slide-container .overlay .button:hover {
+  background: none;
+  color: #ffffff;
+  border: #ffffff solid 2px;
+}
